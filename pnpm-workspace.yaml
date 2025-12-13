@@ -1,17 +1,6 @@
+strictDepBuilds: true
+strictPeerDependencies: true
+trustPolicy: no-downgrade
+
 packages:
   - packages/*
-
-catalog:
-  prettier-plugin-packagejson: ^2.5.20
-  prettier: ^3.7.4
-  lint-staged: ^16.2.7
-  husky: ^9.1.7
-  "@changesets/cli": ^2.29.8
-
-catalogMode: strict
-
-strictDepBuilds: true
-
-strictPeerDependencies: true
-
-trustPolicy: no-downgrade

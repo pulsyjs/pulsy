@@ -4,36 +4,21 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  default:
-    husky:
-      specifier: ^9.1.7
-      version: 9.1.7
-    lint-staged:
-      specifier: ^16.2.7
-      version: 16.2.7
-    prettier:
-      specifier: ^3.7.4
-      version: 3.7.4
-    prettier-plugin-packagejson:
-      specifier: ^2.5.20
-      version: 2.5.20
-
 importers:
 
   .:
     devDependencies:
       husky:
-        specifier: 'catalog:'
+        specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: 'catalog:'
+        specifier: ^16.2.7
         version: 16.2.7
       prettier:
-        specifier: 'catalog:'
+        specifier: ^3.7.4
         version: 3.7.4
       prettier-plugin-packagejson:
-        specifier: 'catalog:'
+        specifier: ^2.5.20
         version: 2.5.20(prettier@3.7.4)
 
 packages:
