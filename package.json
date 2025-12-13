@@ -1,0 +1,24 @@
+{
+	"name": "@pulsy/monorepo",
+	"version": "1.0.0",
+	"description": "Pulsy, build statistics and tests reporter",
+	"keywords": [],
+	"license": "MIT",
+	"author": "",
+	"type": "module",
+	"scripts": {
+		"check:format": "prettier --check .",
+		"format": "prettier --write .",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"husky": "catalog:",
+		"lint-staged": "catalog:",
+		"prettier": "catalog:",
+		"prettier-plugin-packagejson": "catalog:"
+	},
+	"packageManager": "pnpm@10.12.1",
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}
