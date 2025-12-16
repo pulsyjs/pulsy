@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.base.json",
+	"references": [],
+	"include": ["./scripts/**/*.ts", "./eslint.config.mjs"],
+	"files": [],
+	"compilerOptions": { "noEmit": true, "allowJs": true, "checkJs": true }
+}

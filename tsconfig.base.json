@@ -1,0 +1,48 @@
+{
+	"display": "Pulsy Base TSConfig",
+
+	"compilerOptions": {
+		// Node 24 (https://github.com/tsconfig/bases/blob/main/bases/node24.json)
+		"lib": [
+			"es2024",
+			"ESNext.Array",
+			"ESNext.Collection",
+			"ESNext.Iterator",
+			"ESNext.Promise"
+		],
+		"module": "nodenext",
+		"target": "es2024",
+
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"moduleResolution": "node16",
+
+		// Node-with-TS (https://github.com/tsconfig/bases/blob/main/bases/node-ts.json)
+		"rewriteRelativeImportExtensions": true,
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true,
+
+		// Strictest (https://github.com/tsconfig/bases/blob/main/bases/strictest.json)
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		"isolatedModules": true,
+
+		// TypeScript project - https://www.typescriptlang.org/docs/handbook/project-references.html#composite
+		"declaration": true,
+		"declarationMap": true,
+
+		// Project-specific
+		"sourceMap": true,
+		"resolveJsonModule": true
+	}
+}

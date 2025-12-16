@@ -30,5 +30,18 @@ jobs:
       - name: Set up
         uses: ./.github/actions/setup
 
+      - name: Build
+        run: pnpm run build
+
+      - name: Check linting
+        run: pnpm run check:lint
+
       - name: Check file formatting
         run: pnpm run check:format
+
+      - name: Check for modified files
+        run: |
+          MODIFIED_FILES=$(git diff --name-only)
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Unmodified files after building the project:" >&2
+            echo "$MODIFIED_FILES" >&2
